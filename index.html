@@ -1,0 +1,507 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+
+    <title>uxxo: Plusser</title>
+    <link rel="stylesheet" href="_/base.css">
+  <link rel="stylesheet" href="style.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+    <style>
+    @font-face {
+	font-family:"League Spartan";
+	src:url("http://www.myfontfree.com/data/88/l/league-spartan/LeagueSpartan-Bold.otf");
+}
+    aside, article, header, footer, nav {
+	display: block;
+        }
+
+        html, body {
+	margin: 0;
+	padding: 0;
+    font-family: 'Oswald', sans-serif;
+    text-align: center
+            }
+
+body {
+	width: 100%;
+	margin: 0 auto 1em;
+  display: inline;
+
+     }
+
+   
+    header {
+	margin-bottom: 32px;
+    margin-top: 32px;
+    width: 98%;
+    height: 2px;
+    margin-left:1%;
+    margin-right:1%;
+    display: block;
+
+    }
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position:fixed
+    width:100%;
+    font-weight: 300;
+        position: fixed;
+        top: 0;
+}
+
+li {
+    float: left;
+
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: blue;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 16px 16px;
+    text-decoration: none;
+
+
+}
+
+li a:hover, .dropdown:hover .dropbtn .dropdown-content {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgb(240, 240, 240);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+           z-index:1000;
+  position:relative;
+}
+
+.dropdown-content a {
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+
+.dropdown-content a:hover {background-color: red}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+    .title {
+        font-size: 2.4em;
+        line-height: 1em;
+        text-decoration: none;
+        text-align: left;
+        margin-top: 12px;
+        display: block;
+    }
+
+    h1 {
+        font-size: 2.9em;
+        line-height: 1em;
+        text-decoration: none;
+                    text-align: left;
+        margin-top: 4px;
+        font-family: 'League Spartan', serif;
+
+    }
+        h2 {
+        font-size: 1.6em;
+        line-height: 1.3em;
+        text-decoration: none;
+
+            text-align: left;
+
+            margin-top:0px;
+                    font-family: 'League Spartan', serif;
+            font-weight: 300;
+        
+          
+
+         }
+         
+
+         }
+
+         h2b {
+         font-size: 1.8em;
+         font-style: italic;;
+         line-height: 1.1em;
+         text-decoration: none;
+         text-align: left;
+          margin-top:0px;
+          font-family: 'Playfair Display', serif;
+          font-weight: 600;
+
+          }
+
+
+    h3 {
+        line-height: 1.3em;
+        font-size: 1em;
+        text-decoration: none;
+        text-align: left;
+        margin-top: -16px;
+        font-weight: 200;
+         }
+
+ h4 {
+        font-size: 1.4em;
+        font-style: italic;
+        line-height: 1em;
+        text-decoration: none;
+        text-align: center;
+        margin-top:0px;
+        font-family: 'Playfair Display', serif;
+        font-weight: 300;
+        color: black;
+        padding: 10px;
+        
+ }
+        
+  .colleft {
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-top:36px;
+    float: left;
+    width: 360px;
+    height: auto;
+
+  }
+    
+     .colleftborder {
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-top:36px;
+    float: left;
+    width: 360px;
+    height: 480px;
+    background: rgb(189, 190, 192);
+         
+
+
+  }
+    
+    
+    .colleftlandscape360 {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top:36px;
+    float: left;
+    width: 320px;
+    height: 240px;
+    background: rgb(189, 190, 192);
+
+
+  }
+  
+  .colleft2landscape360 {
+    margin-left: 0px;
+    margin-right: 16px;
+    margin-top:36px;
+    width: 480px;
+    height: 360px;
+    background: black;
+    float: left;
+
+      }
+      
+      
+      .colleftportrait200 {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top:24px;
+    float: left;
+    width: 200px;
+    height: 300px;
+    text-align: left;
+    background: black;
+     overflow: hidden;
+          
+
+
+  }
+  
+      .colleft2portrait200 {
+    margin-left: 0px;
+    margin-right: 24px;
+    margin-top:24px;
+    width: 200px;
+    height: auto;
+    float: left;
+    text-align: left;
+    background: black;
+     overflow: hidden;
+      }
+
+
+  .colleftportrait200box {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top:24px;
+    float: left;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    background: LightGray;
+     overflow: hidden;
+          
+
+
+  }
+  
+      .colleft2portrait200box {
+    margin-left: 0px;
+    margin-right: 24px;
+    margin-top:24px;
+    width: 200px;
+    height: auto;
+    float: left;
+    text-align: center;
+    padding: 8px;
+    background: LightGray;
+     overflow: hidden;
+     border-radius: 10px;
+     text-decoration: underline;
+      }
+    
+      .colleftportrait240 {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top:24px;
+    float: left;
+    width: 240px;
+    height: 360px;
+    text-align: center;
+          
+
+
+  }
+  
+      .colleft2portrait240 {
+    margin-left: 0px;
+    margin-right: 24px;
+    margin-top:24px;
+    width: 240px;
+    height: 360px;
+    float: left;
+    text-align: center;
+      }
+      
+
+    
+         .colleftportrait240border {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top:24px;
+    margin-bottom:8px;
+    float: left;
+    width: 240px;
+    height: auto;
+    padding: 10px;
+    border-top: 4px solid red;
+  
+          
+
+
+  }
+    
+  .colleft2 {
+    margin-left: 0px;
+    margin-right: 36px;
+    margin-top:36px;
+    width: 360px;
+   height: auto;
+    float: left;
+
+      }
+    
+    
+    
+    
+    
+  
+    .colleftwide {
+      margin-left: 36px;
+      margin-right: 36px;
+      margin-top:36px;
+      float: left;
+      width: 600px;
+      height: auto;
+
+          }
+
+.colleftwider {
+      margin-left: 36px;
+      margin-right: 36px;
+      margin-top:36px;
+      float: left;
+      width:900px;
+      height: auto;
+
+          }
+
+
+      .collong {
+        margin-left: 36px;
+        margin-right: 36px;
+        margin-top:36px;
+          top: 0;
+        float: left;
+        width: 770px;
+        height: 1026.67px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+ 
+  
+     .colleft2portrait200box>img   {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+   }
+
+.colright  {
+  width: 320px;
+  height: auto;
+  border-top: 4px solid red;
+  margin-right: 36px;
+  margin-top:36px;
+    padding: 10px;
+  float: left;
+  overflow: hidden;
+    }
+    
+    .colrightflow  {
+  width: auto;
+  height: auto;
+  border-top: 4px solid red;
+  margin-right: 36px;
+  margin-top:36px;
+    padding: 10px;
+  float: left;
+  overflow: hidden;
+    }
+    
+    .colright240  {
+  width: 160px;
+  height: 360px;
+  border-top: 4px solid red;
+  margin-right: 24px;
+  margin-top:24px;
+    padding: 10px;
+  float: left;
+  overflow: hidden;
+    }
+    
+    
+
+.colrightlong  {
+  width: 320px;
+  height: 552px;
+  border-top: 4px solid red;
+  margin-left: 8px;
+  margin-right: 36px;
+  margin-top:36px;
+    padding: 10px;
+  float: left;
+  overflow: hidden;
+    }
+
+
+    
+    .container  {
+  width: 94%;
+  border-top: 1px dashed black;
+        padding-bottom: 120px;
+    
+    display: block;
+  overflow: hidden;
+        margin-left: 24px;
+     
+        
+    }
+    
+    
+    
+    p {
+        text-align: center;
+        font-family: 'News Cycle', sans-serif;
+        font-style: italic;
+        font-weight: 100;
+        margin-top: 0;
+        color: black;      
+        line-height: 1.2em;
+        
+    }
+        
+  
+
+
+
+</style>
+</head>
+<body>
+    <header><div class="colright "><a id="#interface"><h2>
+      PART FOUR:
+      <br> USER INTERFACE<br>
+      Sketches</a>
+  </h2>
+          
+
+
+<h3>
+PAPER PROTOTYPES Paper Prototypes & translating paper prototypes (see an in-depth overview of paper prototyping and the process of turning that into digital prototypes). The animated prototype below is just a quick animation of all the initial pages, made with post-it notes, sharpie pens and tape, cropped into iphone-6-size. </h3>
+   
+</div> 
+
+      
+<div class="colleftportrait240"><img src=https://67.media.tumblr.com/cb62da030299bcbbc8c1e0cb3801cab5/tumblr_oejvceExyc1vo4wfwo1_1280.jpg ><p>Main Page</p></div>
+
+<div class="colleft2portrait240"><img src=https://67.media.tumblr.com/12b054d186017a46f0acb5b86e0283a9/tumblr_oejulqLvZh1vo4wfwo1_1280.jpg><p>People Page</p></div>
+
+<div class="colleft2portrait240"><img src=https://68.media.tumblr.com/424457e0c2759fe80a3249263ba5998f/tumblr_oejumx4ZFX1vo4wfwo1_1280.jpg><p>Company Page</p></div>
+</div>
+
+<div class="container"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="_/d3.min.js"></script>
+  <script>
+  
+  
+  </script>
+</body>
+</html>
