@@ -1,44 +1,1224 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<meta charset="UTF-8">
+<!--HEADER: ADD MORE INFO>
+<!--UPDATE TITLE>
+    
+
+<title>index page</title>
+    <link rel="stylesheet" href="_/base.css">
+  <link rel="stylesheet" href="style.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    
+<style>
+    
+/*GOOGLE FONTS*/  
+                <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet"> 
+                <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+/*BLOCK ELEMENTS*/  
+    aside, article, header, footer, nav {
+	display: block;
+        }
+/*FONT-FACE*/  
+@font-face {
+	font-family:"League Spartan";
+	src:url("http://www.myfontfree.com/data/88/l/league-spartan/LeagueSpartan-Bold.otf");
+}
+
+/*HTML & BODY*/  
+        html, body {
+	margin: 0;
+	padding: 0;
+    font-family: 'Oswald', sans-serif;
+    text-align: center
+            }
+/*BODY*/  
+body {
+	width: 100%;
+	margin: 0 auto 1em;
+  display: inline;
+     }
+    
+/*HEADER*/  
+    header {
+	margin-bottom: 32px;
+    margin-top: 32px;
+    width: 100%;
+    height: 2px;
+    margin-left:1%;
+    margin-right:1%;
+    }
+
+/*CONTAINER - MAIN */
+    .container  {
+          width: 96%;
+          border-top: 1px dashed black;
+          padding-bottom: 60px;
+          display: block;
+          overflow: auto;
+        margin-left: 12px;
+        height: auto;
+        overflow-y: scroll;
+    }
+    
+/*IMAGE CONTAINER*/
+    
+    .imgcontainer {
+        margin: 8px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start; 
+        align-content: center; 
+        flex-wrap: wrap;
+        
+    }
+    
+ 
+    
+/*COLUMN PERCENTAGE DIVIDERS*/
+    .col18 {
+        width: 18%;
+        
+    }
+    
+    
+    .col20 {
+        width: 20%;
+        
+    }
+    
+    .col25 {
+        width: 25%;
+         
+    }
+    .col30 {
+        width: 30%;
+         
+    }
+    
+    .col33 {
+        width: 33%;
+     
+    }
+    
+     .col40 {
+        width: 40%;
+     
+    }
+    
+    .col45 {
+        width: 45%;
+     
+    }
+    
+    .col48 {
+        width: 48%;
+     
+    }
+      .col50 {
+        width: 50%;
+     
+    }
+    
+       .col60 {
+        width: 60%;
+     
+    }
+ 
+          .col70 {
+        width: 70%;
+     
+    }
+    
+       .col80 {
+        width: 80%;
+     
+    }
+        .col90 {
+        width: 90%;
+     
+    }
+    
+         .col96 {
+        width: 96%;
+     
+    }
+
+
+/*MEDIA QUERIES*/
+/*500px*/
+    
+                @media only screen and (max-width: 500px) {
+                .colredborder20 {
+                    width: 100%;
+                    border-bottom: 4px solid red;
+                    margin-top: 24px;
+                    text-align: center;
+                    margin-bottom: 24px;
+                }
+
+                    .colredborder20.colredborder100 h2 {
+
+                    margin-top: 8px;
+                    text-align: center;
+                    margin-bottom: 8px;
+                }
+
+
+                .hide400    {
+                    display: none
+                    }
+
+                     .show400    {
+                    width: 90%;
+                    }
+            }
+/*MEDIA QUERIES*/    
+/*501-728px*/
+                @media only screen and (min-width: 501px) and (max-width: 728px) {
+
+
+                     .show728  {
+                    width: 48%;
+                    }
+
+                }
+/*MEDIA QUERIES*/
+/*728px*/
+
+                  @media only screen and (max-width: 728px) {
+
+                       .showfull728  {
+                    width: 90%;
+                    }
+
+
+                    .hide728  {
+                    display: none;
+                    }
+
+                }
+   
+    
+/*MEDIA QUERIES*/      
+/*729px-960px*/
+                   @media only screen and (min-width: 729px) and (max-width: 960px) {
+
+                     .show960  {
+                    width: 32%;
+                    }
+
+                }
+/*MEDIA QUERIES*/
+/*960px*/
+          
+                    @media only screen and (max-width: 960px) {
+
+                    .hide960  {
+                    display: none;
+                    }
+
+
+                }
+
+/*END OF MEDIA QUERIES*/
+    
+    
+/*TEXT PERCENTAGE DIVIDERS*/
+/*TITLE BOX RED*/
+/*used most often*/
+        .colredborder100 {
+   border-top: 4px solid red;
+   border-bottom: 4px solid red;
+   width: 100%;
+   height: auto;
+   padding: 8px;
+   margin-bottom: 24px;
+        margin-top: 12px;
+}
+
+/*TEXT CONTAINER dashed black border*/  
+    
+    .colblackborder100 {
+  
+  
+   border-top: 1px dashed black;
+   width: 100%;
+   height: auto;
+   padding: 8px;
+   margin-bottom: 24px; 
+        margin-top: 24px; 
+  
+}
+    
+/*TEXT CONTAINER dashed black border for h1 text*/  
+    
+    .colredborder100 h1{
+margin-top: 8px;
+ text-align: left;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+    
+    
+/*TEXT CONTAINER dashed black border for h2 text*/   
+
+    .colredborder100  h2{
+margin-top: 24px;
+ text-align: center;
+        margin-bottom: 8px;
+        
+    }
+   
+     
+/*TEXT CONTAINER dashed black border for h3 text*/  
+  
+    .colblackborder100 h3 {
+  margin-top: 8px;
+ text-align: left;
+        margin-bottom: 8px;
+  
+}
+    
+/*columns for long-ish text*/  
+    article {
+  -webkit-columns: 3 200px;
+     -moz-columns: 3 200px;
+          columns: 3 200px;
+  -webkit-column-gap: 2em;
+     -moz-column-gap: 2em;
+          column-gap: 2em;
+  -webkit-column-rule: 1px dotted #ddd;
+     -moz-column-rule: 1px dotted #ddd;
+          column-rule: 1px dotted #ddd;
+}
+    
+/*menu preferences*/ 
+/*unordered list*/ 
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position:fixed
+    width:100%;
+    font-weight: 300;
+        position: fixed;
+        top: 0;
+}
+
+li {
+    float: left;
+    	margin-bottom: 50px;
+}
+
+    
+li a, .dropbtn {
+    display: inline-block;
+    color: blue;
+    text-align: center;
+    font-size: .9em;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-family:"League Spartan";
+
+
+}
+
+li a:hover, .dropdown:hover .dropbtn .dropdown-content {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgb(240, 240, 240);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+           z-index:1000;
+  position:relative;
+}
+
+.dropdown-content a {
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+
+.dropdown-content a:hover {background-color: red}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+ /*FONT SIZES - h1,h2,h3,h4 */ 
+ /*h1*/ 
+    h1 {
+        font-size: 240%;
+        line-height: 100%;
+        text-decoration: none;
+                    text-align: left;
+        margin-top: 4px;
+        font-family: 'League Spartan', serif;
+    }
+    
+/*h2*/    
+        h2 {
+        font-size: 130%;
+        line-height: 130%;
+        text-decoration: none;
+            text-align: left;
+            margin-top:0px;
+                    font-family: 'League Spartan', serif;
+            font-weight: 300;
+        
+         }
+         
+/*h3*/   
+    
+    h3 {
+        line-height: 140%;
+        font-size: 100%;
+        text-decoration: none;
+        text-align: left;
+        margin-top: -8px;
+        font-weight: 200;
+         }
+
+/*h4*/ 
+
+    h4 {
+        font-size: 140%;
+        font-style: italic;
+        line-height: 100%;
+        text-decoration: none;
+        text-align: center;
+        margin-top:0px;
+        font-family: 'Playfair Display', serif;
+        font-weight: 300;
+        color: black;
+        padding: 10px;
+        
+ }
+
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+    
+    
+ img:hover {
+            -webkit-transform: scale(1.1); /* Saf3.1+, Chrome */
+     -moz-transform: scale(1.1); /* FF3.5+ */
+      -ms-transform: scale(1.1); /* IE9 */
+       -o-transform: scale(1.1); /* Opera 10.5+ */
+          transform: scale(1.1);
+        }
+        
+   
+    p {
+        text-align: left;
+        font-family: 'Oswald', serif;
+        font-weight: 100;
+        margin-top: 0;
+        color: black;      
+        line-height: 1.2em;
+        
+    }
+    
+    p1 {
+        text-align: left;
+        font-family: 'Oswald', serif;
+        font-weight: 100;
+        margin-top: 0;
+        color: black;      
+        line-height: 1.2em;
+        
+    }
+    
+     /*linked tags*/ 
+    
+     .tag {
+  width: auto;
+  height: auto;
+  border: 1px solid blue;
+  border-radius: 6px;
+  font-family:"League Spartan";
+  font-size: .8em;
+  color: black;
+  margin: 4px;
+  padding: 2px 4px;
+  text-decoration: none;
+  
+
+ 
+    }
+    
+    /*linked tags*/ 
+       .tag:hover {
+ background-color: yellow;
+ color: black;
+ border: 1px solid black;
+ text-decoration: none;
+ -webkit-transform: scale(1.1); /* Saf3.1+, Chrome */
+     -moz-transform: scale(1.1); /* FF3.5+ */
+      -ms-transform: scale(1.1); /* IE9 */
+       -o-transform: scale(1.1); /* Opera 10.5+ */
+          transform: scale(1.1);
+ 
+ 
+    }
+    
+    /*linked tags*/ 
+    .colleftwide:hover, .colleft:hover {
+    
+    -webkit-transform: scale(1.05); /* Saf3.1+, Chrome */
+     -moz-transform: scale(1.05); /* FF3.5+ */
+      -ms-transform: scale(1.05); /* IE9 */
+       -o-transform: scale(1.05); /* Opera 10.5+ */
+          transform: scale(1.05);
+    }
+    /*linked tags*/ 
+
+a { text-decoration: none; color:blue; margin-top:10px; }
+a:visited { text-decoration: none; color:blue }
+a:hover { text-decoration: none; color:blue }
+a:focus { text-decoration: none; color:blue }
+a:hover, a:active { text-decoration: none; color:blue }
+
+    
+    /*linked tags*/ 
+         .tagbox {
+  width: 100%;
+  height: auto;
+  border-top: 1px dashed black;
+  margin-top: 20px;
+  padding: 4px;
+             padding-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+             margin: 
+    }
+
+       a.selected {
+  background-color:#1F75CC;
+  color:white;
+  z-index:100;
+}
+
+.messagepop {
+  background-color:#FFFFFF;
+  border:1px solid #999999;
+  cursor:default;
+  display:none;
+  margin-top: 15px;
+  position:absolute;
+  text-align:left;
+  width:394px;
+  z-index:50;
+  padding: 25px 25px 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 3px;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+
+.messagepop p, .messagepop.div {
+  border-bottom: 1px solid #EFEFEF;
+  margin: 8px 0;
+  padding-bottom: 8px;
+} 
+        
+   
+</style>
 </head>
 <body>
+   <header>
+       <!---NAV BAR-->
+        <ul class="topnav" id="myTopnav">
 
-<div data-role="page" id="pageone">
-  <div data-role="header">
-    <h1>Welcome To My Homepage</h1>
-  </div>
+  <li><a class="active" href="http://uxxo-fyi.tumblr.com">uxxo.fyi</a></li>
 
-  <div data-role="main" class="ui-content">
-    <p>Welcome!</p>
-    <a href="#pagetwo">Go to Dialog Page</a>
-  </div>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Projects</a>
+    <div class="dropdown-content">
+      <a href="http://uxxo-fyi.tumblr.com/projects_plusser">Plusser</a>
+      <a href="http://uxxo-fyi.tumblr.com/projects_ellevest">Ellevest</a>
+      <a href="http://uxxo-fyi.tumblr.com/projects_Homelys">Homelys</a>
+      <a href="http://uxxo-fyi.tumblr.com/projects_Anna-Anna">Anna-Anna</a>
+        <a href="http://uxxo-fyi.tumblr.com/projects_valentina">Valentina</a>
+    </div>
+  </li>
 
-  <div data-role="footer">
-    <h1>Footer Text</h1>
-  </div>
+  <li class="dropdown">
+  <a href="#" class="dropbtn">Search by Category</a>
+       <div class="dropdown-content">
+      <a href="http://uxxo-fyi.tumblr.com/deliverables_personas">Personas</a>
+      <a href="http://uxxo-fyi.tumblr.com/deliverables_wireframes">Wireframes</a>
+        <a href="http://uxxo-fyi.tumblr.com/deliverables_user%20flows_site%20maps">User journeys, flows & site maps</a>
+
+            <a href="deliverables_paper prototypes">Paper Prototypes</a>
+      <a href="http://uxxo.fyi/Animated_Prototypes_(After_Effects)">Animated Prototypes (After Effects)</a>
+      <a href="http://uxxo.fyi/software_axure">Clickable Prototype (Axure)</a>
+        <a href="http://uxxo.fyi/Front-End_Rapid Prototyping">Clickable Prototype (Code)</a>
+        
+        <a href="http://uxxo-fyi.tumblr.com/deliverables_UI">UI</a>
+        <!---<a href="http://uxxo-fyi.tumblr.com/deliverables_UI_plusser">UI - Plusser</a>
+        <a href="http://uxxo-fyi.tumblr.com/deliverables_UI_ellevest">UI - Ellevest</a>
+        <!---<a href="#">UI</a>--->
+        <a href="http://uxxo-fyi.tumblr.com/deliverables_drawings_illustrations">Drawings+Illustrations</a>
+            </div>
+
+  <li class="dropdown">
+  <a href="#" class="dropbtn">Search by UX/UI Software</a>
+       <div class="dropdown-content">
+      <a href="http://uxxo.fyi/Animated_Prototypes_(After_Effects)">After Effects</a>
+      <a href="http://uxxo.fyi/software_axure">Axure</a>
+      <a href="http://uxxo.fyi/software_balsamiq">Balsamiq</a>
+      <a href="http://uxxo.fyi/software_indesign">InDesign</a>
+      <a href="http://uxxo.fyi/software_illustrator">Illustrator</a>
+      <a href="http://uxxo.fyi/software_InVision">InVision</a>
+      <a href="http://uxxo.fyi/software_omnigraffle">Omnigraffle</a>
+      <a href="http://uxxo.fyi/software_sketch">Sketch</a>
+
+      <li class="dropdown">
+      <a href="#" class="dropbtn">Front-End Development</a>
+           <div class="dropdown-content">
+          <a href="http://uxxo.fyi/Front-End_Javascript_Jquery">Javascript+Jquery</a>
+          <a href="http://uxxo.fyi/Front-End_D3">D3+Data Visualization</a>
+          <a href="http://codepen.io/ManuelaL/">Link to Codepen</a>
+           <a href="https://github.com/popbijoux/">Link to GitHub</a>
+
+            </div> 
+
+  <!---<li class="dropdown">
+  <a href="#" class="dropbtn">About+Resume</a>
+       <div class="dropdown-content">
+      <a href="#">About</a>
+      <a href="#">Resume</a>--->
+      
+      <li><a href="http://uxxo-fyi.tumblr.com/resume">Resume</a></li>
+<!----
+<li><a href="#news">Blog </a></li>
+</ul>
+    </header>
+    <div class="col1left"> </div>
+    <div class="col2right">
+        <h1>Adobe Illustrator</h1>
+        <h2>This is a subtitle</h2>
+        <h3>This is the text.This is the text.This is the text.</h3>
+--->
+    </div>
+    </header>
+    <div class="toptab"></div>
+       
+       
+       
+       
+       
+<!---CONTAINER 1 - d3 post-->
+<!---CONTAINER-->
+<div class="container">
+    
+
+    
+<!---TITLE BOX-->
+<div class="colredborder100">
+        <h1>INTEGRATING D3 GRAPHS INTO CARD DESIGNS</h1>
+<!---END OF TITLE BOX--> 
+</div> 
+    
+    
+<!---IMAGE CONTAINER-->
+    <div class="imgcontainer">   
+<!---IMAGE A 48%--> 
+        <div class="col48 showfull728">
+                <img src=https://68.media.tumblr.com/c56373f68918e2be5ab8da8577fe69d4/tumblr_ofb8hlopew1vo4wfwo1_500.gif></div>
+<!---IMAGE B 48%-->    
+                <div class="col48 hide728">
+<!---LINK TO CODEPEN-->
+                <p> data-height="300" data-theme-id="dark" data-slug-hash="kkRrwd" data-default-tab="js,result" data-user="ManuelaL" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/ManuelaL/pen/kkRrwd/">data-to-icon card transitions</a> by Manuela (<a href="http://codepen.io/ManuelaL">@ManuelaL</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                <script async src="//assets.codepen.io/assets/embed/ei.js"></script> </div> 
+
+<!---END OF IMAGE CONTAINER-->  
+     </div> 
+    
+    
+    
+    
+<!---TEXT BORDER - BLACK--> 
+    <div class="colblackborder100">
+<!---TEXT--> 
+        
+            
+    <div class="messagepop pop">
+  <form method="post" id="new_message" action="/messages">
+    <p><label for="email">Your email or name</label><input type="text" size="30" name="email" id="email" /></p>
+    <p><label for="body">Message</label><textarea rows="6" name="body" id="body" cols="35"></textarea></p>
+    <p><input type="submit" value="Send Message" name="commit" id="message_submit"/> or <a class="close" href="/">Cancel</a></p>
+  </form>
+</div>
+<div id="dialog" title="Basic dialog">
+  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
+ 
+<a href="/contact" id="contact">Contact Us</a>
+            <h3>I have been working on bringing d3-based graphs into a consumer-fintech application. The d3 graph is coded into a hidden layer, and introduced once the user clicks on a smaller svg on the card.</h3>
+<!---END OF TEXT BORDER - BLACK--> 
+    </div>
+    
+    
+<!---TAG BOX & TAGS--> 
+                <span class="tagbox"><p>
+                            <span class="tag"><a href=http://uxxo.fyi/Front-End_D3>#d3</a></span>
+                            <span class="tag"><a href="http://uxxo.fyi/responsiveweb">#html5</a></span>
+                            <span class="tag"><a href="http://uxxo.fyi/responsiveweb">#css3</a></span>
+                            <span class="tag"><a href="http://uxxo.fyi/Front-End_Javascript_Jquery">#Javascript</a></span>
+                            <span class="tag"><a href="http://uxxo.fyi/Front-End_Javascript_Jquery">#jquery</a></span>
+                                <span class="tag"><a href="http://uxxo.fyi/responsiveweb">#responsive_web</a></span>
+                            <span class="tag"><a href="http://uxxo-fyi.tumblr.com/deliverables_UI">#ui</a></span>
+<!---END OF TAG BOX & TAGS-->  
+ </span></p>
+<!---END OF CONTAINER 2-->  
+</div>  
+
+
+    
+<!---CONTAINER 2 - DATA AS FORM post-->
+<!---CONTAINER-->
+<div class="container">
+    
+
+<!---TITLE BOX-->
+    <div class="colredborder100">
+                    <h1>PRESENTING DATA AS FORM</h1>
+<!---END OF TITLE BOX--> 
+    </div> 
+    
+    
+    
+<!---IMAGE CONTAINER-->    
+    <div class="imgcontainer">
+<!---IMAGE A 48%--> 
+    <div class="col48 showfull728">
+        <img src=https://67.media.tumblr.com/3934f77e87ddc23c3d3960451bcabb7f/tumblr_ofdkrmooMR1vo4wfwo1_1280.png></div>
+    
+<!---IMAGE B 48%-->   
+    <div class="col48 hide728">
+        
+    <!---LINK TO CODEPEN-->
+        <p data-height="300" data-theme-id="dark" data-slug-hash="kkRrwd" data-default-tab="js,result" data-user="ManuelaL" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/ManuelaL/pen/kkRrwd/">data-to-icon card transitions (fin-tech can be elegant:)</a> by Manuela (<a href="http://codepen.io/ManuelaL">@ManuelaL</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+        <script async src="//assets.codepen.io/assets/embed/ei.js"></script></div>
+<!---END OF IMAGE CONTAINER-->
+    </div> 
+    
+    
+    
+    
+<!---TEXT BORDER - BLACK-->  
+<div class="colblackborder100">
+    <h3>
+        <p>When it comes to consumer applications, presenting data gradually is one way to improve user experience.</p> 
+        <p>It's a much easier way to "read" data, in contrast to the overwhelming amount of information that is presented to users interacting with financial information in the consumer context.
+        </p> 
+    </h3>
+    
+<!---END OF TEXT BORDER - BLACK--> 
+    </div>
+    
+    
+    
+<!---TAG BOX & TAG-->
+    <span class="tagbox">
+        <p>
+        <span class="tag"><a href=http://uxxo.fyi/Front-End_D3>#d3</a></span>
+        <span class="tag"><a href="http://uxxo.fyi/responsiveweb">#html5</a></span>
+        <span class="tag"><a href="http://uxxo.fyi/responsiveweb">#css3</a></span>
+        <span class="tag"><a href="http://uxxo.fyi/Front-End_Javascript_Jquery">#Javascript</a></span>
+        <span class="tag"><a href="http://uxxo.fyi/Front-End_Javascript_Jquery">#Jquery</a></span>
+<!---END OF TAG BOX & TAGS-->  
+ </span></p>
+<!---END OF CONTAINER 2-->  
+</div>
+    
+    
+
+    
+<!---CONTAINER 3 - INTERACTIVE CARD DESIGN post-->
+<!---CONTAINER-->    
+<div class="container">
+<!---TITLE BOX-->
+<div class="colredborder100">
+                <h1>INTERACTIVE CARD DESIGN</h1>
+<!---END OF TITLE BOX--> 
+ </div> 
+    
+<!---IMAGE CONTAINER-->    
+            <div class="imgcontainer">
+<!---IMAGE A 90%--> 
+            <div class="col90">
+                    <img src=https://67.media.tumblr.com/35415d0596e799689de61460113cf03a/tumblr_ofb8f4GvN11vo4wfwo1_500.gif></div>
+
+<!---IMAGE A 48%--> 
+          <div class="col90">
+<!---LINK TO CODEPEN-->
+    
+            
+                    <p data-height="300" data-theme-id="dark" data-slug-hash="kkRrwd" data-default-tab="js,result" data-user="ManuelaL" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/ManuelaL/pen/kkRrwd/">data-to-icon card transitions (fin-tech can be elegant:)</a> by Manuela (<a href="http://codepen.io/ManuelaL">@ManuelaL</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                    <script async src="//assets.codepen.io/assets/embed/ei.js"></script></div>
+<!---END OF IMAGE CONTAINER-->  
+            </div>
+    
+    
+<!---TEXT BORDER - BLACK-->
+<div class="colblackborder100">
+<!---TEXT-->   
+
+    <h3>
+        <p>This is a first page of a fin-tech application  that connects user-defined goals to portfolio information.</p>
+        
+        <p>I have been working on connecting personal-finance-related data to user-specific personal goals, something I see as a pain point in fin-tech related consumer apps, where numbers are often presented outside of their intended life-narrative context.</p>
+    
+        <p>View the interactive live page on GitHub <a href="https://popbijoux.github.io/cards_my_portfolio/">here</a></p>
+    </h3>
+    
+<!---END OF TEXT BORDER - BLACK--> 
 </div>
 
-<div data-role="page" data-dialog="true" id="pagetwo">
-  <div data-role="header">
-    <h1>I'm A Dialog Box!</h1>
-  </div>
+<!---TAG BOX & TAGS--> 
+    <span class="tagbox">
+        <span class="tag"><a href=http://uxxo.fyi/Front-End_D3>#d3</a></span>
+        <span class="tag"><a href="http://uxxo.fyi/responsiveweb">#html5</a></span>
+        <span class="tag"><a href="http://uxxo.fyi/responsiveweb">#css3</a></span>
+        <span class="tag"><a href="http://uxxo.fyi/Front-End_Javascript_Jquery">#javascript</a></span>
+        <span class="tag"><a href="http://uxxo.fyi/Front-End_Javascript_Jquery">#jquery</a></span>
 
-  <div data-role="main" class="ui-content">
-    <p>The dialog box is different from a normal page, it is displayed on top of the current page and it will not span the entire width of the page. The dialog has also an icon of "X" in the header to close the box.</p>
-    <a href="#pageone">Go to Page One</a>
-  </div>
+<!---END OF TAG BOX & TAGS-->  
+ </span></p>
+        
+<!---END OF CONTAINER-->  
+</div>
+    
+    
+<!---CONTAINER 4 - CODE VS AXURE VS OMNIGRAFFLE post-->
+<!---CONTAINER-->
+<div class="container">
+<!---TITLE BOX-->
+    <div class="colredborder100">
+            <h1>CODE VS AXURE VS OMNIGRAFFLE</h1>
+<!---END OF TITLE BOX-->
+    </div>
+    
+<!---IMAGE CONTAINER-->
+    <div class="imgcontainer">
+<!---IMAGE A 90%--> 
+        <div class="col90">
+                <img src=https://67.media.tumblr.com/35415d0596e799689de61460113cf03a/tumblr_ofb8f4GvN11vo4wfwo1_500.gif></div>
+<!---END OF IMAGE CONTAINER--> 
+    </div>
+    
+    
+<!---TEXT BORDER - BLACK--> 
+    <div class="colblackborder100">
+<!---TEXT-->   
+        <h3 >The many stages of "prototype"</h3>
+<!---END OF TEXT BORDER - BLACK--> 
+    </div>
+    
+    
+<!---TAG BOX & TAGS--> 
+        <p>
+                <span class="tagbox">
+                       <span class="tag"><a href="http://uxxo.fyi/software_axure">#axure</a></span>
+                       <span class="tag"><a href="http://uxxo.fyi/software_omnigraffle">#omnigraffle</a></span>
+                       <span class="tag"><a href="http://uxxo.fyi/responsiveweb">#responsive_web</a></span>
+                       <span class="tag"><a href=http://uxxo.fyi/Front-End_Rapid Prototyping>#code</a></span>
+                       <span class="tag"><a href=http://uxxo.fyi/Front-End_Rapid Prototyping>#rapid_prototyping</a></span>
+               
+<!---END OF TAG BOX & TAGS--> 
+                </span></p>  
+<!---END OF CONTAINER 4-->
+     </div>
+    
+    
+<!---CONTAINER 5 & 5B - PLUSSER + ELLEVEST post-->
+<!---CONTAINER-->
+    <div class="container">     
+<!---TITLE BOX-->
+    <div class="colredborder100">
+        <h1>PLUSSER</h1>
+<!---END OF TITLE BOX-->
+        </div>
+<!---IMAGE CONTAINER-->
+    <div class="imgcontainer">
+<!---IMAGE A 48% WITH LINK--> 
+                <div class="col60">
+                        <a href="http://uxxo.fyi/projects_plusser">
+                                <img src=https://67.media.tumblr.com/eb8d82877d94888a196c02ae0f650fec/tumblr_oehvkbxTvm1vo4wfwo1_500.png>
+                        </a>
+               
+<!---END OF IMAGE CONTAINER-->
+                 </div>
+<!---TEXT BORDER - BLACK--> 
+        <div class="colblackborder100">
+<!---TEXT-->   
+                <h3>A mobile application designed to let you connect with other people just like you, and share their passions, recommendations and and stories in a positive, life-affirming fashion.</h3>
+<!---END OF TEXT BORDER - BLACK--> 
+        </div>
 
-  <div data-role="footer">
-    <h1>Footer Text In Dialog</h1>
-  </div>
+<!---TAG BOX & TAGS--> 
+            <p>
+                <span class="tagbox">
+                    <span class="tag"><a href="http://uxxo.fyi/deliverables_personas">#personas</a></span>
+                    <span class="tag"><a href="http://uxxo-fyi.tumblr.com/deliverables_UI">#ui</a></span>
+                    <span class="tag"><a href="http://uxxo.fyi/deliverables_user%20flows_site%20maps">#information_architecture</a></span>
+                    <span class="tag"><a href="http://uxxo.fyi/software_omnigraffle">#omnigraffle</a></span>
+                    <span class="tag"><a href="http://uxxo.fyi/software_sketch">#sketchapp</a></span>
+                    <span class="tag"><a href="http://uxxo.fyi/software_illustrator">#illustrator</a></span>
+                    <span class="tag"><a href="http://uxxo.fyi/projects_plusser">#plusser</a></span>
+                    <span class="tag"><a href="http://uxxo-fyi.tumblr.com/deliverables_drawings_illustrations">#illustration</a></span>
+                    <span class="tag"><a href="http://uxxo.fyi/Animated_Prototypes_(After_Effects)">#after_effects</a></span>
+                </span>
+            </p>
+<!---END OF TAG BOX & TAGS--> 
+        </div>
+<!---END OF TEXT BORDER - BLACK--> 
+    </div>
+<!---END OF CONTAINER 5-->
 </div>
 
 
+    
+        
+<!---CONTAINER 5 & 5B - ELLEVEST post-->
+<!---CONTAINER-->
+ <div class="container">       
+<!---TITLE BOX-->
+    <div class="colredborder100">
+        <h1>Ellevest</h1>
+<!---END OF TITLE BOX-->
+    </div>
+
+<!---IMAGE CONTAINER-->
+      <div class="imgcontainer">
+<!---IMAGE A 60% WITH LINK-->  
+          <div class="col60">              
+
+                   <a href="http://uxxo.fyi/projects_ellevest">
+                       <div class="colleft">
+                           <img src=https://66.media.tumblr.com/a28630f323bc666134438f11d4d16cfb/tumblr_oewauh55AV1vo4wfwo1_540.png>
+                       </div>
+                   </a>
+<!---END OF IMAGE CONTAINER-->
+            </div>
+<!---TEXT BORDER - BLACK--> 
+                <div class="colblackborder100">
+<!---TEXT-->   
+                    <h3> A financial “robo-advisor” app founded by Sallie Krawcheck, designed to meet the needs of women interested in investing.</h3>
+<!---END OF TEXT BORDER - BLACK--> 
+     </div>   
+<!---TAG BOX & TAGS--> 
+
+                <p><span class="tagbox">
+                    
+                            <span class="tag"><a href="http://uxxo-fyi.tumblr.com/deliverables_UI">#ui</a></span>
+                            <span class="tag"><a href="http://uxxo.fyi/deliverables_user%20flows_site%20maps">#information_architecture</a></span>
+                            <span class="tag"><a href="http://uxxo.fyi/software_omnigraffle">#omnigraffle</a></span>
+                            <span class="tag"><a href="http://uxxo.fyi/software_illustrator">#illustrator</a></span>
+                            <span class="tag"><a href="http://uxxo-fyi.tumblr.com/projects_ellevest">#ellevest</a></span>
+                            <span class="tag"><a href="http://uxxo.fyi/software_balsamiq">#balsamiq</a></span>
+                             <span class="tag"><a href="http://uxxo-fyi.tumblr.com/deliverables_wireframes">#wireframes</a></span>
+                            <span class="tag"><a href="http://uxxo.fyi/Animated_Prototypes_(After_Effects)">#after_effects</a></span>
+                   
+<!---END OF TAG BOX & TAGS--> 
+            </span></p>
+<!---END OF CONTAINER 2--> 
+     </div>
+    
+    
+    
+<!---CONTAINER 6 - Personas post-->
+
+<!---CONTAINER-->
+  <div class="container">  
+<!---TITLE BOX-->
+<div class="colredborder100">
+            <h1>Personas</h1>
+<!---END OF TITLE BOX-->
+      </div>
+<!---IMAGE CONTAINER-->
+  <div class="imgcontainer">
+<!---IMAGE A 60%--> 
+        <div class="col60"> 
+                          <a href="http://uxxo.fyi/deliverables_personas">
+                          <img src=https://68.media.tumblr.com/3976844c7d9f20d24d666fce7f6c5140/tumblr_oejtdxhyaS1vo4wfwo1_1280.jpg></a>
+        </div>
+    
+<!---TEXT BORDER - BLACK--> 
+        <div class="colblackborder100">
+            add
+<!---END OF TEXT BORDER - BLACK--> 
+                    </div>
+ <!---TAG BOX & TAGS-->    
+        <p><span class="tagbox">
+        <span class="tag"><a href="http://uxxo.fyi/software_omnigraffle">#omnigraffle</a></span>
+        <span class="tag"><a href="http://uxxo.fyi/deliverables_user%20flows_site%20maps">#information_architecture</a></span>
+        <span class="tag"><a href="http://uxxo-fyi.tumblr.com/projects_ellevest">#ellevest</a></span>
+        <span class="tag"><a href="http://uxxo.fyi/projects_plusser">#plusser</a></span>
+         <span class="tag"><a href="http://uxxo.fyi/software_illustrator">#illustrator</a></span>
+         <span class="tag"><a href="http://uxxo-fyi.tumblr.com/deliverables_drawings_illustrations">#illustration</a></span>
+        <span class="tag"><a href="http://uxxo.fyi/deliverables_personas">#personas</a></span>
+<!---END OF TAG BOX & TAGS-->
+            </span></p>
+
+<!---END OF IMAGE CONTAINER-->
+      </div>
+<!---END OF CONTAINER 2-->  
+      </div>
+      
+      
+      
+
+<!---CONTAINER 7 - UI post-->
+<!---CONTAINER-->
+     <div class="container">
+<!---TITLE BOX-->
+<div class="colredborder100">
+     <h1>UI</h1>
+<!---END OF TITLE BOX-->
+     </div>
+<!---IMAGE CONTAINER-->
+      <div class="imgcontainer">
+<!---IMAGE A 80%--> 
+          <div class="col60">
+          <a href="http://uxxo.fyi/deliverables_UI_plusser"> <img src=https://67.media.tumblr.com/a222b716ec8a51ff5c65aa85f38b493b/tumblr_inline_ocf0fwUZtm1qd22e4_500.png></a></div>
+<!---END OF IMAGE CONTAINER-->
+</div>
+<!---TEXT BORDER - BLACK--> 
+            <div class="colblackborder100">
+<!---TEXT--> 
+                    add
+<!---END OF TEXT BORDER - BLACK-->
+            </div>
+<!---TAG BOX & TAGS--> 
+    <p><span class="tagbox">
+                     <span class="tag"><a href="http://uxxo.fyi/software_omnigraffle">#omnigraffle</a></span>
+                      <span class="tag"><a href="http://uxxo.fyi/deliverables_user%20flows_site%20maps">#information_architecture</a></span>
+                         <span class="tag"><a href="http://uxxo.fyi/software_illustrator">#illustrator</a></span>
+                        <span class="tag"><a href="http://uxxo-fyi.tumblr.com/deliverables_UI">#ui</a></span>
+                        <span class="tag"><a href="http://uxxo.fyi/software_sketch">#sketchapp</a></span>
+        
+<!---END OF TAG BOX & TAGS--> 
+    </span></p>
+<!---END OF CONTAINER 2-->  
+      </div>
+  
+         
+     </div>
+    
+<!---CONTAINER 7 - User Flows & Site Maps post-->
+<!---CONTAINER-->
+    <div class="container">
+<!---TITLE BOX-->
+        <div class="colredborder100">
+                <h1>User Flows & Site Maps</h1>
+<!---END OF TITLE BOX-->
+        </div>
+<!---IMAGE CONTAINER-->
+        <div class="imgcontainer">  
+<!---IMAGE A 60%--> 
+          <div class="col60">         
+            <a href="http://uxxo.fyi/deliverables_user%20flows_site%20maps"><img src=https://67.media.tumblr.com/bccb5f9655dfce5dd58cab88d48373f9/tumblr_oewoadToWU1vo4wfwo1_1280.png></a>     
+           </div>
+<!---END OF IMAGE CONTAINER-->
+</div>
+<!---TEXT BORDER - BLACK--> 
+    <div class="colblackborder100">
+<!---TEXT--> 
+        add
+<!---END OF TEXT BORDER - BLACK--> 
+    </div>
+<!---TAG BOX & TAGS--> 
+          <p><span class="tagbox">
+                        <span class="tag"><a href="http://uxxo.fyi/software_omnigraffle">#omnigraffle</a></span>
+                          <span class="tag"><a href="http://uxxo.fyi/deliverables_user%20flows_site%20maps">#information_architecture</a></span>
+<!---END OF TAG BOX & TAGS-->  
+              </span></p>
+<!---END OF CONTAINER 2-->  
+     </div>
+    
+
+    
+<!---CONTAINER 8 - Wireframes post-->
+<!---CONTAINER-->        
+      <div class="container"> 
+<!---TITLE BOX-->
+<div class="colredborder100">
+    <h1>Wireframes</h1>
+<!---END OF TITLE BOX-->
+    </div>
+<!---IMAGE CONTAINER-->
+      <div class="imgcontainer"> 
+<!---IMAGE A 60%-->
+      <div class="col60"> 
+              <a href="http://uxxo.fyi/deliverables_wireframes"><img src=https://66.media.tumblr.com/495ac253bf2dfe770f8c5e8e9ced1798/tumblr_oejxyk1Ad21vo4wfwo1_500.png></a>
+      </div>
+<!---END OF IMAGE CONTAINER-->
+</div>
+<!---TEXT BORDER - BLACK--> 
+    <div class="colblackborder100">
+<!---TEXT--> 
+        add
+<!---END OF TEXT BORDER - BLACK--> 
+    </div>
+<!---TAG BOX & TAGS--> 
+        <p><span class="tagbox">
+                     <span class="tag"><a href="http://uxxo.fyi/software_omnigraffle">#omnigraffle</a></span>
+                      <span class="tag"><a href="http://uxxo.fyi/deliverables_user%20flows_site%20maps">#information_architecture</a></span>
+                        <span class="tag"><a href="http://uxxo-fyi.tumblr.com/deliverables_wireframes">#wireframes</a></span>
+<!---END OF TAG BOX & TAGS-->  
+              </span></p>
+
+<!---END OF CONTAINER 2-->  
+     </div>
+     
+
+       
+       
+       
+
+
+
+  
+       
+<!---CONTAINER 9 - Homelys post--> 
+<!---CONTAINER--> 
+<div class="container"> 
+<!---TITLE BOX--> 
+<div class="colredborder100">
+<h1>Homelys</h1> 
+<!---END OF TITLE BOX--> 
+ </div> 
+          
+    
+<!---IMAGE CONTAINER-->  
+<div class="imgcontainer"> 
+     
+    
+<!---IMAGE A 60%-->  
+<div class="col60">  
+            <a href="http://uxxo.fyi/projects_Homelys"><img src=https://66.media.tumblr.com/8b44548d4ca5a465fabf73cb096576c3/tumblr_oefznvFqxS1vo4wfwo1_1280.png></a>       
+<!---END OF IMAGE CONTAINER-->
+ </div> 
+    
+    
+<!---TEXT BORDER - BLACK--> 
+ <div class="colblackborder100">
+<!---TEXT--> 
+ add
+<!---END OF TEXT BORDER - BLACK--> 
+ </div>
+    
+    
+<!---TAG BOX & TAGS-->      
+<span class="tagbox">
+         <span class="tag"><a href="http://uxxo.fyi/software_indesign">#InDesign</a></span>
+         <span class="tag"><a href="http://uxxo.fyi/software_indesign">#publication</a></span>
+         <span class="tag"><a href="http://uxxo.fyi/software_indesign">#print</a></span>
+         <span class="tag"><a href="http://uxxo.fyi/software_indesign">#exhibition</a></span>
+         <span class="tag"><a href="http://uxxo.fyi/responsiveweb">#responsive web</a></span>
+<!---END OF TAG BOX & TAGS-->  
+ </span></p>
+      
+      
+<!---END OF CONTAINER 2-->  
+</div>              
+              
+
+       
+       
+<!---CONTAINER--> 
+<div class="container"> 
+
+<!---TITLE BOX--> 
+<div class="colredborder100"> 
+<h1>valentina</h1>
+<!---END OF TITLE BOX--> 
+</div> 
+    
+    
+<!---IMAGE CONTAINER-->  
+<div class="imgcontainer"> 
+    
+    
+<!---IMAGE A 60%-->  
+<div class="col60">  
+         <a href="http://uxxo.fyi/projects_valentina">
+         <img          src=http://67.media.tumblr.com/78fb9219ae57dd078c0418596f9487b8/tumblr_inline_obcbqivAJW1qd22e4_500.png></a></div> 
+<!---END OF IMAGE CONTAINER-->
+ </div> 
+    
+    
+<!---TEXT BORDER - BLACK--> 
+ <div class="colblackborder100">
+<!---TEXT--> 
+ add
+<!---END OF TEXT BORDER - BLACK--> 
+ </div>
+    
+    
+<!---TAG BOX & TAGS--> 
+<p><span class="tagbox">
+             <span class="tag"><a href="http://uxxo.fyi/responsiveweb">#responsiveweb</a></span>
+                 <span class="tag"><a href="http://uxxo.fyi/software_illustrator">#illustrator</a></span>
+                <span class="tag"><a href="http://uxxo-fyi.tumblr.com/deliverables_drawings_illustrations">#illustration</a></span>
+<!---END OF TAG BOX & TAGS-->  
+ </span></p>
+    
+    
+<!---END OF CONTAINER 2-->  
+</div>   
+    
+    
+<!---LAST CONTAINER LINE ON THIS-->  
+     <div class="container"> </div> 
+<!---SCRIPTS-->   
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+
+<!--JQUERY POP UP-->
+<script>
+  $( function() {
+    $( "#dialog" ).dialog();
+  } );
+  </script>
+
+
+
+
+<!--END OF PAGE-->
 </body>
 </html>
-
